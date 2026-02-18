@@ -188,7 +188,7 @@ export default function GeneticParams() {
 
                     {/* Formula */}
                     <div className="formula-block mt-4" style={{ fontSize: '0.9em' }}>
-                        <Formula latex={`h^2 = \frac{V_A}{V_P} = \frac{${VA}}{${params.VP.toFixed(1)}} = ${params.h2_narrow.toFixed(4)}`} />
+                        <Formula latex={`h^2 = \\frac{V_A}{V_P} = \\frac{${VA}}{${params.VP.toFixed(1)}} = ${params.h2_narrow.toFixed(4)}`} />
                     </div>
 
                     {/* Insight */}
