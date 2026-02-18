@@ -239,7 +239,7 @@ export default function PedigreeMME() {
                             </div>
 
                             <div className="formula-block mb-4" style={{ fontSize: '0.8em' }}>
-                                <Formula latex="\\begin{bmatrix} \\mathbf{X'X} & \\mathbf{X'Z} \\\\ \\mathbf{Z'X} & \\mathbf{Z'Z}+\\mathbf{A}^{-1}\\alpha \\end{bmatrix} \\begin{bmatrix} \\hat{\\mathbf{b}} \\\\ \\hat{\\mathbf{a}} \\end{bmatrix} = \\begin{bmatrix} \\mathbf{X'y} \\\\ \\mathbf{Z'y} \\end{bmatrix}" />
+                                <Formula latex={"\\begin{bmatrix} \\mathbf{X'X} & \\mathbf{X'Z} \\\\ \\mathbf{Z'X} & \\mathbf{Z'Z}+\\mathbf{A}^{-1}\\alpha \\end{bmatrix} \\begin{bmatrix} \\hat{\\mathbf{b}} \\\\ \\hat{\\mathbf{a}} \\end{bmatrix} = \\begin{bmatrix} \\mathbf{X'y} \\\\ \\mathbf{Z'y} \\end{bmatrix}"} />
                             </div>
 
                             {/* BLUE */}
@@ -320,6 +320,6 @@ export default function PedigreeMME() {
                     )}
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
