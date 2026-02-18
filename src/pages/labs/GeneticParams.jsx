@@ -188,7 +188,7 @@ export default function GeneticParams() {
 
                     {/* Formula */}
                     <div className="formula-block mt-4" style={{ fontSize: '0.9em' }}>
-                        <Formula latex={`h^2 = \\frac{V_A}{V_P} = \\frac{${VA}}{${params.VP.toFixed(1)}} = ${params.h2_narrow.toFixed(4)}`} />
+                        <Formula latex={`h^2 = \frac{V_A}{V_P} = \frac{${VA}}{${params.VP.toFixed(1)}} = ${params.h2_narrow.toFixed(4)}`} />
                     </div>
 
                     {/* Insight */}
@@ -234,7 +234,7 @@ export default function GeneticParams() {
                     </div>
                     <div>
                         <div className="formula-block">
-                            <Formula latex="\\Delta G = i \\times h^2 \\times \\sigma_P" />
+                            <Formula latex="\Delta G = i \times h^2 \times \sigma_P" />
                         </div>
                         <p className="text-sm text-muted">遗传进展与遗传力成正比——h²越大，选择反应越强</p>
                     </div>

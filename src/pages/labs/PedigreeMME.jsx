@@ -140,7 +140,7 @@ export default function PedigreeMME() {
                         </div>
                         <div className="mt-4">
                             <div className="formula-block" style={{ fontSize: '0.85em' }}>
-                                <Formula latex="a_{ii} = 1 + F_i, \\quad a_{ij} = \\frac{1}{2}(a_{j,s_i} + a_{j,d_i})" />
+                                <Formula latex="a_{ii} = 1 + F_i, \quad a_{ij} = \frac{1}{2}(a_{j,s_i} + a_{j,d_i})" />
                             </div>
                         </div>
                     </div>
@@ -239,7 +239,7 @@ export default function PedigreeMME() {
                             </div>
 
                             <div className="formula-block mb-4" style={{ fontSize: '0.8em' }}>
-                                <Formula latex={"\\begin{bmatrix} \\mathbf{X'X} & \\mathbf{X'Z} \\\\ \\mathbf{Z'X} & \\mathbf{Z'Z}+\\mathbf{A}^{-1}\\alpha \\end{bmatrix} \\begin{bmatrix} \\hat{\\mathbf{b}} \\\\ \\hat{\\mathbf{a}} \\end{bmatrix} = \\begin{bmatrix} \\mathbf{X'y} \\\\ \\mathbf{Z'y} \\end{bmatrix}"} />
+                                <Formula latex={"\begin{bmatrix} \mathbf{X'X} & \mathbf{X'Z} \\ \mathbf{Z'X} & \mathbf{Z'Z}+\mathbf{A}^{-1}\alpha \end{bmatrix} \begin{bmatrix} \hat{\mathbf{b}} \\ \hat{\mathbf{a}} \end{bmatrix} = \begin{bmatrix} \mathbf{X'y} \\ \mathbf{Z'y} \end{bmatrix}"} />
                             </div>
 
                             {/* BLUE */}

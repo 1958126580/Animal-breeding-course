@@ -288,7 +288,7 @@ export default function GenomicSelection() {
                     <div className="glass-card-static">
                         <h3 style={{ fontWeight: 700, marginBottom: 'var(--space-4)' }}>📐 G矩阵构建（VanRaden 2008 方法1）</h3>
                         <div className="formula-block">
-                            <Formula latex="\\mathbf{G} = \\frac{\\mathbf{Z}\\mathbf{Z}'}{2\\sum_{j=1}^{m} p_j(1-p_j)}" />
+                            <Formula latex="\mathbf{G} = \frac{\mathbf{Z}\mathbf{Z}'}{2\sum_{j=1}^{m} p_j(1-p_j)}" />
                         </div>
                         <p className="text-sm text-muted mt-3">
                             其中 Z 为中心化基因型矩阵：Z<sub>ij</sub> = M<sub>ij</sub> - 2p<sub>j</sub>
@@ -301,7 +301,7 @@ export default function GenomicSelection() {
                     <div className="glass-card-static">
                         <h3 style={{ fontWeight: 700, marginBottom: 'var(--space-4)' }}>📐 GBLUP模型</h3>
                         <div className="formula-block">
-                            <Formula latex="\\mathbf{y} = \\mathbf{X}\\mathbf{b} + \\mathbf{Z}\\mathbf{g} + \\mathbf{e}, \\quad \\mathbf{g} \\sim N(0, \\mathbf{G}\\sigma_g^2)" />
+                            <Formula latex="\mathbf{y} = \mathbf{X}\mathbf{b} + \mathbf{Z}\mathbf{g} + \mathbf{e}, \quad \mathbf{g} \sim N(0, \mathbf{G}\sigma_g^2)" />
                         </div>
                         <p className="text-sm text-muted mt-3">
                             GBLUP 直接用 G 矩阵替代 A 矩阵，使得即使没有表型记录的基因型个体也能获得 GEBV。
@@ -311,7 +311,7 @@ export default function GenomicSelection() {
                     <div className="glass-card-static">
                         <h3 style={{ fontWeight: 700, marginBottom: 'var(--space-4)' }}>📐 单步法 H矩阵</h3>
                         <div className="formula-block">
-                            <Formula latex="\\mathbf{H}^{-1} = \\mathbf{A}^{-1} + \\begin{bmatrix} 0 & 0 \\\\ 0 & \\mathbf{G}^{-1} - \\mathbf{A}_{22}^{-1} \\end{bmatrix}" />
+                            <Formula latex="\mathbf{H}^{-1} = \mathbf{A}^{-1} + \begin{bmatrix} 0 & 0 \\ 0 & \mathbf{G}^{-1} - \mathbf{A}_{22}^{-1} \end{bmatrix}" />
                         </div>
                         <p className="text-sm text-muted mt-3">
                             ssGBLUP（单步GBLUP）将有基因组和无基因组个体的信息统一到 H 矩阵中，实现一步法遗传评定。

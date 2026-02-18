@@ -228,7 +228,7 @@ export default function BreedingSimulator() {
                     </div>
 
                     <div className="formula-block mt-4" style={{ fontSize: '0.85em' }}>
-                        <Formula latex={`\\Delta G = ${intensity.toFixed(2)} \\times ${h2.toFixed(2)} \\times \\sigma_P`} />
+                        <Formula latex={`\Delta G = ${intensity.toFixed(2)} \times ${h2.toFixed(2)} \times \sigma_P`} />
                     </div>
 
                     <div className="flex flex-col gap-2 mt-4">
